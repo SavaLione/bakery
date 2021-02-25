@@ -50,81 +50,111 @@
     <role name="Юрист">
       <displayName>Юрист</displayName>
     </role>
+    <role name="Старший кладовщик">
+      <displayName>Старший кладовщик</displayName>
+    </role>
+    <role name="Старший мастер">
+      <displayName>Старший мастер</displayName>
+    </role>
+    <role name="Инженер по труду">
+      <displayName>Инженер по труду</displayName>
+    </role>
+    <role name="Главный механик">
+      <displayName>Главный механик</displayName>
+    </role>
+    <role name="Главный энергетик">
+      <displayName>Главный энергетик</displayName>
+    </role>
+    <role name="Начальник производственной лаборатории">
+      <displayName>Начальник производственной лаборатории</displayName>
+    </role>
+    <role name="Старший технолог">
+      <displayName>Старший технолог</displayName>
+    </role>
+    <role name="Слесарь">
+      <displayName>Слесарь</displayName>
+    </role>
   </roles>
   <groups>
-    <group name="acme">
-      <displayName>Acme</displayName>
-      <description>This group represents the acme department of the ACME organization</description>
+    <group name="Хлебокомбинат">
+      <displayName>Хлебокомбинат</displayName>
+      <description></description>
     </group>
-    <group name="hr" parentPath="/acme">
+    <group name="hr" parentPath="/Хлебокомбинат">
       <displayName>Human Resources</displayName>
       <description>This group represents the human resources department of the ACME organization</description>
     </group>
-    <group name="finance" parentPath="/acme">
+    <group name="finance" parentPath="/Хлебокомбинат">
       <displayName>Finance</displayName>
       <description>This group represents the finance department of the ACME organization</description>
     </group>
-    <group name="it" parentPath="/acme">
+    <group name="it" parentPath="/Хлебокомбинат">
       <displayName>Infrastructure</displayName>
       <description>This group represents the infrastructure department of the ACME organization</description>
     </group>
-    <group name="marketing" parentPath="/acme">
+    <group name="marketing" parentPath="/Хлебокомбинат">
       <displayName>Marketing</displayName>
       <description>This group represents the marketing department of the ACME organization</description>
     </group>
-    <group name="production" parentPath="/acme">
+    <group name="production" parentPath="/Хлебокомбинат">
       <displayName>Production</displayName>
       <description>This group represents the production department of the ACME organization</description>
     </group>
-    <group name="sales" parentPath="/acme">
+    <group name="sales" parentPath="/Хлебокомбинат">
       <displayName>Sales</displayName>
       <description>This group represents the sales department of the ACME organization</description>
     </group>
-    <group name="europe" parentPath="/acme/sales">
+    <group name="europe" parentPath="/Хлебокомбинат/sales">
       <displayName>Europe</displayName>
       <description>This group represents the europe department of the ACME organization</description>
     </group>
-    <group name="asia" parentPath="/acme/sales">
+    <group name="asia" parentPath="/Хлебокомбинат/sales">
       <displayName>Asia</displayName>
       <description>This group represents the asia department of the ACME organization</description>
     </group>
-    <group name="latin_america" parentPath="/acme/sales">
+    <group name="latin_america" parentPath="/Хлебокомбинат/sales">
       <displayName>Latin America</displayName>
       <description>This group represents the latin america department of the ACME organization</description>
     </group>
-    <group name="north_america" parentPath="/acme/sales">
+    <group name="north_america" parentPath="/Хлебокомбинат/sales">
       <displayName>North America</displayName>
       <description>This group represents the north america department of the ACME organization</description>
     </group>
-    <group name="rd" parentPath="/acme/production">
+    <group name="rd" parentPath="/Хлебокомбинат/production">
       <displayName>Research &amp; Development</displayName>
       <description>This group represents the research &amp; development department of the ACME organization</description>
     </group>
-    <group name="services" parentPath="/acme/production">
+    <group name="services" parentPath="/Хлебокомбинат/production">
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
     </group>
-    <group name="IT" parentPath="/acme">
+    <group name="IT" parentPath="/Хлебокомбинат">
       <displayName>IT</displayName>
     </group>
-    <group name="Russia" parentPath="/acme/sales/europe">
+    <group name="Russia" parentPath="/Хлебокомбинат/sales/europe">
       <displayName>Russia</displayName>
     </group>
-    <group name="Food" parentPath="/acme/production">
+    <group name="Food" parentPath="/Хлебокомбинат/production">
       <displayName>Food</displayName>
+    </group>
+    <group name="Лаборатория" parentPath="/Хлебокомбинат">
+      <displayName>Лаборатория</displayName>
+    </group>
+    <group name="Отдел сбыта" parentPath="/Хлебокомбинат">
+      <displayName>Отдел сбыта</displayName>
     </group>
   </groups>
   <memberships>
     <membership>
       <userName>savalione</userName>
       <roleName>member</roleName>
-      <groupName>acme</groupName>
+      <groupName>Хлебокомбинат</groupName>
     </membership>
     <membership>
       <userName>darlakon</userName>
       <roleName>member</roleName>
       <groupName>it</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/Хлебокомбинат</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

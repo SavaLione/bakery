@@ -25,10 +25,6 @@
     </user>
   </users>
   <roles>
-    <role name="member">
-      <displayName>Member</displayName>
-      <description></description>
-    </role>
     <role name="Директор">
       <displayName>Директор</displayName>
     </role>
@@ -74,6 +70,9 @@
     <role name="Слесарь">
       <displayName>Слесарь</displayName>
     </role>
+    <role name="Создатель схемы BPMN 2.0">
+      <displayName>Создатель схемы BPMN 2.0</displayName>
+    </role>
   </roles>
   <groups>
     <group name="Хлебокомбинат">
@@ -84,58 +83,35 @@
       <displayName>Human Resources</displayName>
       <description>This group represents the human resources department of the ACME organization</description>
     </group>
-    <group name="finance" parentPath="/Хлебокомбинат">
-      <displayName>Finance</displayName>
+    <group name="Бухгалтерия" parentPath="/Хлебокомбинат">
+      <displayName>Бухгалтерия</displayName>
       <description>This group represents the finance department of the ACME organization</description>
     </group>
     <group name="it" parentPath="/Хлебокомбинат">
       <displayName>Infrastructure</displayName>
       <description>This group represents the infrastructure department of the ACME organization</description>
     </group>
-    <group name="marketing" parentPath="/Хлебокомбинат">
-      <displayName>Marketing</displayName>
+    <group name="Маркетинг" parentPath="/Хлебокомбинат">
+      <displayName>Маркетинг</displayName>
       <description>This group represents the marketing department of the ACME organization</description>
     </group>
-    <group name="production" parentPath="/Хлебокомбинат">
-      <displayName>Production</displayName>
+    <group name="Продукция" parentPath="/Хлебокомбинат">
+      <displayName>Продукция</displayName>
       <description>This group represents the production department of the ACME organization</description>
     </group>
-    <group name="sales" parentPath="/Хлебокомбинат">
-      <displayName>Sales</displayName>
+    <group name="Продажи" parentPath="/Хлебокомбинат">
+      <displayName>Продажи</displayName>
       <description>This group represents the sales department of the ACME organization</description>
     </group>
-    <group name="europe" parentPath="/Хлебокомбинат/sales">
-      <displayName>Europe</displayName>
+    <group name="Россия" parentPath="/Хлебокомбинат/Продажи">
+      <displayName>Россия</displayName>
       <description>This group represents the europe department of the ACME organization</description>
-    </group>
-    <group name="asia" parentPath="/Хлебокомбинат/sales">
-      <displayName>Asia</displayName>
-      <description>This group represents the asia department of the ACME organization</description>
-    </group>
-    <group name="latin_america" parentPath="/Хлебокомбинат/sales">
-      <displayName>Latin America</displayName>
-      <description>This group represents the latin america department of the ACME organization</description>
-    </group>
-    <group name="north_america" parentPath="/Хлебокомбинат/sales">
-      <displayName>North America</displayName>
-      <description>This group represents the north america department of the ACME organization</description>
-    </group>
-    <group name="rd" parentPath="/Хлебокомбинат/production">
-      <displayName>Research &amp; Development</displayName>
-      <description>This group represents the research &amp; development department of the ACME organization</description>
-    </group>
-    <group name="services" parentPath="/Хлебокомбинат/production">
-      <displayName>Services</displayName>
-      <description>This group represents the services department of the ACME organization</description>
     </group>
     <group name="IT" parentPath="/Хлебокомбинат">
       <displayName>IT</displayName>
     </group>
-    <group name="Russia" parentPath="/Хлебокомбинат/sales/europe">
-      <displayName>Russia</displayName>
-    </group>
-    <group name="Food" parentPath="/Хлебокомбинат/production">
-      <displayName>Food</displayName>
+    <group name="Хлеб" parentPath="/Хлебокомбинат/Продукция">
+      <displayName>Хлеб</displayName>
     </group>
     <group name="Лаборатория" parentPath="/Хлебокомбинат">
       <displayName>Лаборатория</displayName>
@@ -143,18 +119,41 @@
     <group name="Отдел сбыта" parentPath="/Хлебокомбинат">
       <displayName>Отдел сбыта</displayName>
     </group>
+    <group name="Булки" parentPath="/Хлебокомбинат/Продукция">
+      <displayName>Булки</displayName>
+    </group>
+    <group name="Торты" parentPath="/Хлебокомбинат/Продукция">
+      <displayName>Торты</displayName>
+    </group>
+    <group name="Печенье" parentPath="/Хлебокомбинат/Продукция">
+      <displayName>Печенье</displayName>
+    </group>
+    <group name="Хлебцы" parentPath="/Хлебокомбинат/Продукция">
+      <displayName>Хлебцы</displayName>
+    </group>
+    <group name="Белый" parentPath="/Хлебокомбинат/Продукция/Хлеб">
+      <displayName>Белый</displayName>
+    </group>
+    <group name="Серый" parentPath="/Хлебокомбинат/Продукция/Хлеб">
+      <displayName>Серый</displayName>
+    </group>
+    <group name="Чёрный" parentPath="/Хлебокомбинат/Продукция/Хлеб">
+      <displayName>Чёрный</displayName>
+    </group>
+    <group name="С отрубями" parentPath="/Хлебокомбинат/Продукция/Хлеб">
+      <displayName>С отрубями</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
       <userName>savalione</userName>
-      <roleName>member</roleName>
+      <roleName>Создатель схемы BPMN 2.0</roleName>
       <groupName>Хлебокомбинат</groupName>
     </membership>
     <membership>
       <userName>darlakon</userName>
-      <roleName>member</roleName>
-      <groupName>it</groupName>
-      <groupParentPath>/Хлебокомбинат</groupParentPath>
+      <roleName>Создатель схемы BPMN 2.0</roleName>
+      <groupName>Хлебокомбинат</groupName>
     </membership>
   </memberships>
 </organization:Organization>

@@ -87,8 +87,8 @@
       <displayName>Бухгалтерия</displayName>
       <description>This group represents the finance department of the ACME organization</description>
     </group>
-    <group name="it" parentPath="/Хлебокомбинат">
-      <displayName>Infrastructure</displayName>
+    <group name="Инфраструктура" parentPath="/Хлебокомбинат">
+      <displayName>Инфраструктура</displayName>
       <description>This group represents the infrastructure department of the ACME organization</description>
     </group>
     <group name="Маркетинг" parentPath="/Хлебокомбинат">
@@ -142,6 +142,15 @@
     </group>
     <group name="С отрубями" parentPath="/Хлебокомбинат/Продукция/Хлеб">
       <displayName>С отрубями</displayName>
+    </group>
+    <group name="Склад" parentPath="/Хлебокомбинат/Инфраструктура">
+      <displayName>Склад</displayName>
+    </group>
+    <group name="Поставка сырья" parentPath="/Хлебокомбинат/Инфраструктура">
+      <displayName>Поставка сырья</displayName>
+    </group>
+    <group name="Вывоз продукции" parentPath="/Хлебокомбинат/Инфраструктура">
+      <displayName>Вывоз продукции</displayName>
     </group>
   </groups>
   <memberships>

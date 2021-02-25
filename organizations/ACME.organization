@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="ACME" description="The ACME organization is an example of a typical hierarchy. It can be used for development.">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="savalione">
+      <firstName>Савелий</firstName>
+      <lastName>Потоцкий</lastName>
+      <jobTitle>IT</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">cfdf</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="darlakon">
+      <firstName>Данил</firstName>
+      <lastName>Корецкий</lastName>
+      <title></title>
+      <jobTitle>IT</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">darl</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="member">
+      <displayName>Member</displayName>
+      <description></description>
+    </role>
+    <role name="Директор">
+      <displayName>Директор</displayName>
+    </role>
+    <role name="Главный инженер">
+      <displayName>Главный инженер</displayName>
+    </role>
+    <role name="Заведующий производством">
+      <displayName>Заведующий производством</displayName>
+    </role>
+    <role name="Главный бухгалтер">
+      <displayName>Главный бухгалтер</displayName>
+    </role>
+    <role name="Заведующий экспедицией">
+      <displayName>Заведующий экспедицией</displayName>
+    </role>
+    <role name="Экспедитор">
+      <displayName>Экспедитор</displayName>
+    </role>
+    <role name="Юрист">
+      <displayName>Юрист</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="acme">
+      <displayName>Acme</displayName>
+      <description>This group represents the acme department of the ACME organization</description>
+    </group>
+    <group name="hr" parentPath="/acme">
+      <displayName>Human Resources</displayName>
+      <description>This group represents the human resources department of the ACME organization</description>
+    </group>
+    <group name="finance" parentPath="/acme">
+      <displayName>Finance</displayName>
+      <description>This group represents the finance department of the ACME organization</description>
+    </group>
+    <group name="it" parentPath="/acme">
+      <displayName>Infrastructure</displayName>
+      <description>This group represents the infrastructure department of the ACME organization</description>
+    </group>
+    <group name="marketing" parentPath="/acme">
+      <displayName>Marketing</displayName>
+      <description>This group represents the marketing department of the ACME organization</description>
+    </group>
+    <group name="production" parentPath="/acme">
+      <displayName>Production</displayName>
+      <description>This group represents the production department of the ACME organization</description>
+    </group>
+    <group name="sales" parentPath="/acme">
+      <displayName>Sales</displayName>
+      <description>This group represents the sales department of the ACME organization</description>
+    </group>
+    <group name="europe" parentPath="/acme/sales">
+      <displayName>Europe</displayName>
+      <description>This group represents the europe department of the ACME organization</description>
+    </group>
+    <group name="asia" parentPath="/acme/sales">
+      <displayName>Asia</displayName>
+      <description>This group represents the asia department of the ACME organization</description>
+    </group>
+    <group name="latin_america" parentPath="/acme/sales">
+      <displayName>Latin America</displayName>
+      <description>This group represents the latin america department of the ACME organization</description>
+    </group>
+    <group name="north_america" parentPath="/acme/sales">
+      <displayName>North America</displayName>
+      <description>This group represents the north america department of the ACME organization</description>
+    </group>
+    <group name="rd" parentPath="/acme/production">
+      <displayName>Research &amp; Development</displayName>
+      <description>This group represents the research &amp; development department of the ACME organization</description>
+    </group>
+    <group name="services" parentPath="/acme/production">
+      <displayName>Services</displayName>
+      <description>This group represents the services department of the ACME organization</description>
+    </group>
+    <group name="IT" parentPath="/acme">
+      <displayName>IT</displayName>
+    </group>
+    <group name="Russia" parentPath="/acme/sales/europe">
+      <displayName>Russia</displayName>
+    </group>
+    <group name="Food" parentPath="/acme/production">
+      <displayName>Food</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>savalione</userName>
+      <roleName>member</roleName>
+      <groupName>acme</groupName>
+    </membership>
+    <membership>
+      <userName>darlakon</userName>
+      <roleName>member</roleName>
+      <groupName>it</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>

@@ -116,9 +116,6 @@
     <group name="Лаборатория" parentPath="/Хлебокомбинат">
       <displayName>Лаборатория</displayName>
     </group>
-    <group name="Отдел сбыта" parentPath="/Хлебокомбинат">
-      <displayName>Отдел сбыта</displayName>
-    </group>
     <group name="Булки" parentPath="/Хлебокомбинат/Продукция">
       <displayName>Булки</displayName>
     </group>
@@ -127,9 +124,6 @@
     </group>
     <group name="Печенье" parentPath="/Хлебокомбинат/Продукция">
       <displayName>Печенье</displayName>
-    </group>
-    <group name="Хлебцы" parentPath="/Хлебокомбинат/Продукция">
-      <displayName>Хлебцы</displayName>
     </group>
     <group name="Белый" parentPath="/Хлебокомбинат/Продукция/Хлеб">
       <displayName>Белый</displayName>
@@ -149,8 +143,20 @@
     <group name="Поставка сырья" parentPath="/Хлебокомбинат/Инфраструктура">
       <displayName>Поставка сырья</displayName>
     </group>
-    <group name="Вывоз продукции" parentPath="/Хлебокомбинат/Инфраструктура">
-      <displayName>Вывоз продукции</displayName>
+    <group name="Отдел сбыта" parentPath="/Хлебокомбинат/Инфраструктура">
+      <displayName>Отдел сбыта</displayName>
+    </group>
+    <group name="Сухарики" parentPath="/Хлебокомбинат/Продукция">
+      <displayName>Сухарики</displayName>
+    </group>
+    <group name="Сахар" parentPath="/Хлебокомбинат/Инфраструктура/Склад">
+      <displayName>Сахар</displayName>
+    </group>
+    <group name="Мука" parentPath="/Хлебокомбинат/Инфраструктура/Склад">
+      <displayName>Мука</displayName>
+    </group>
+    <group name="Дрожжи" parentPath="/Хлебокомбинат/Инфраструктура/Склад">
+      <displayName>Дрожжи</displayName>
     </group>
   </groups>
   <memberships>
